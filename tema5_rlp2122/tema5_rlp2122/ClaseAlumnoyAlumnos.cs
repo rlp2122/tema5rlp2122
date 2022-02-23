@@ -31,12 +31,28 @@ namespace tema5_rlp2122
         private void button1_Click(object sender, EventArgs e)
         {
             Alumno miAlumno = new Alumno();
-            String miAlumnoStr;
-
+            String miAlumnoStr, miAlumnoNotaTexto;
             miAlumno.Nombre = aluNombre.Text;
             miAlumno.Nota = Convert.ToInt32(aluNota.Text);
-            miAlumnoStr = aluNombre.Text + " " + aluNota.Text + (miAlumno.Aprobado ? " Aprobado" : " Suspenso")+"\n";
-            listaAlumnos.AppendText(miAlumnoStr);
+            if (miAlumno.Nota < 5)
+            {
+                miAlumnoNotaTexto = "Suspenso" + '\n';
+            }
+            else if (miAlumno.Nota < 7)
+            {
+                miAlumnoNotaTexto = "Aprobado";
+            }
+            else if (miAlumno.Nota < 9)
+            {
+                //rlp2122
+                miAlumnoNotaTexto = "Notable";
+            }
+            else
+            {
+                miAlumnoNotaTexto = "Sobresaliente";
+            }
+            miAlumnoStr = '\n' + aluNombre.Text + " " + aluNota.Text + " " + miAlumnoNotaTexto + "\n";
+            listaAlumnos.AppendText(miAlumnoStr + '\n');
             misAlumnos.Agregar(miAlumno);
         }
 
