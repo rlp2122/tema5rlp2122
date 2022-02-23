@@ -1,0 +1,10 @@
+C:\Users\Administrador\source\repos\tema5rlp2122\tema5_rlp2122\tema5_rlp2122\obj\Debug\tema5_rlp2122.csproj.AssemblyReference.cache
+C:\Users\Administrador\source\repos\tema5rlp2122\tema5_rlp2122\tema5_rlp2122\obj\Debug\tema5_rlp2122.Form1.resources
+C:\Users\Administrador\source\repos\tema5rlp2122\tema5_rlp2122\tema5_rlp2122\obj\Debug\tema5_rlp2122.Properties.Resources.resources
+C:\Users\Administrador\source\repos\tema5rlp2122\tema5_rlp2122\tema5_rlp2122\obj\Debug\tema5_rlp2122.csproj.GenerateResource.cache
+C:\Users\Administrador\source\repos\tema5rlp2122\tema5_rlp2122\tema5_rlp2122\obj\Debug\tema5_rlp2122.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\source\repos\tema5rlp2122\tema5_rlp2122\tema5_rlp2122\bin\Debug\tema5_rlp2122.exe.config
+C:\Users\Administrador\source\repos\tema5rlp2122\tema5_rlp2122\tema5_rlp2122\bin\Debug\tema5_rlp2122.exe
+C:\Users\Administrador\source\repos\tema5rlp2122\tema5_rlp2122\tema5_rlp2122\bin\Debug\tema5_rlp2122.pdb
+C:\Users\Administrador\source\repos\tema5rlp2122\tema5_rlp2122\tema5_rlp2122\obj\Debug\tema5_rlp2122.exe
+C:\Users\Administrador\source\repos\tema5rlp2122\tema5_rlp2122\tema5_rlp2122\obj\Debug\tema5_rlp2122.pdb
