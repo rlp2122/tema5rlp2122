@@ -33,28 +33,26 @@ namespace tema5_rlp2122
             Alumno miAlumno = new Alumno();
             String miAlumnoStr, miAlumnoNotaTexto;
             miAlumno.Nombre = aluNombre.Text;
-            miAlumno.Nota = Convert.ToInt32(aluNota.Text);
+            miAlumno.Nota = Convert.ToInt32(numericUpDown1.Text);
             if (miAlumno.Nota < 5)
             {
-                miAlumnoNotaTexto = "Suspenso" + '\n';
+                miAlumnoNotaTexto = " Suspenso" + '\n';
             }
             else if (miAlumno.Nota < 7)
             {
-                miAlumnoNotaTexto = "Aprobado";
+                miAlumnoNotaTexto = " Aprobado";
             }
             else if (miAlumno.Nota < 9)
             {
                 //rlp2122
-                miAlumnoNotaTexto = "Notable";
+                miAlumnoNotaTexto = " Notable";
             }
             else
             {
-                miAlumnoNotaTexto = "Sobresaliente";
+                miAlumnoNotaTexto = " Sobresaliente";
             }
-            miAlumnoStr = '\n' + aluNombre.Text + " " + aluNota.Text + " " + miAlumnoNotaTexto + "\n";
-            listaAlumnos.AppendText(miAlumnoStr + '\n');
             miAlumno.Nota = Convert.ToInt32(numericUpDown1.Text);
-            miAlumnoStr = aluNombre.Text + " " + numericUpDown1.Text + (miAlumno.Aprobado ? " Aprobado" : " Suspenso")+"\n";
+            miAlumnoStr = aluNombre.Text + miAlumnoNotaTexto + "\n";
             listaAlumnos.AppendText(miAlumnoStr);
             misAlumnos.Agregar(miAlumno);
         }
