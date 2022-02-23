@@ -15,12 +15,12 @@ namespace tema5_rlp2122
     public partial class Form1 : Form
     {
         private TextBox aluNombre;
-        private TextBox aluNota;
         private TextBox listaAlumnos;
         private Label label1;
         private Label label2;
         private Label label3;
         private Button button1;
+        private NumericUpDown numericUpDown1;
         Alumnos misAlumnos = new Alumnos();
 
         public Form1()
@@ -34,8 +34,8 @@ namespace tema5_rlp2122
             String miAlumnoStr;
 
             miAlumno.Nombre = aluNombre.Text;
-            miAlumno.Nota = Convert.ToInt32(aluNota.Text);
-            miAlumnoStr = aluNombre.Text + " " + aluNota.Text + (miAlumno.Aprobado ? " Aprobado" : " Suspenso")+"\n";
+            miAlumno.Nota = Convert.ToInt32(numericUpDown1.Text);
+            miAlumnoStr = aluNombre.Text + " " + numericUpDown1.Text + (miAlumno.Aprobado ? " Aprobado" : " Suspenso")+"\n";
             listaAlumnos.AppendText(miAlumnoStr);
             misAlumnos.Agregar(miAlumno);
         }
@@ -43,12 +43,13 @@ namespace tema5_rlp2122
         private void InitializeComponent()
         {
             this.aluNombre = new System.Windows.Forms.TextBox();
-            this.aluNota = new System.Windows.Forms.TextBox();
             this.listaAlumnos = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // aluNombre
@@ -57,13 +58,6 @@ namespace tema5_rlp2122
             this.aluNombre.Name = "aluNombre";
             this.aluNombre.Size = new System.Drawing.Size(300, 20);
             this.aluNombre.TabIndex = 0;
-            // 
-            // aluNota
-            // 
-            this.aluNota.Location = new System.Drawing.Point(349, 58);
-            this.aluNota.Name = "aluNota";
-            this.aluNota.Size = new System.Drawing.Size(87, 20);
-            this.aluNota.TabIndex = 1;
             // 
             // listaAlumnos
             // 
@@ -111,17 +105,25 @@ namespace tema5_rlp2122
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(339, 58);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(84, 20);
+            this.numericUpDown1.TabIndex = 7;
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(626, 360);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listaAlumnos);
-            this.Controls.Add(this.aluNota);
             this.Controls.Add(this.aluNombre);
             this.Name = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
